@@ -1,20 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: zoucw (326359613@qq.com)
+ * @Date: 2021-02-18 00:31:14
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-02-18 23:23:44
+ */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);
+export { default as Button } from './components/Button'
+export { default as Icon } from './components/Icon'
+export { default as Menu } from './components/Menu'
+export { default as Input } from './components/Input'
+export { default as Upload } from './components/Upload'
+export { default as Transition} from './components/Transition'
+export { default as Progress} from './components/Progress'

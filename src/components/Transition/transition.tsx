@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: zoucw (326359613@qq.com)
+ * @Date: 2021-02-18 00:31:14
+ * @LastEditors: 
+ * @LastEditTime: 2021-02-18 23:43:04
+ */
 import React from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
