@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-17 15:40:22
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-17 16:57:42
+ * @LastEditTime: 2021-02-24 23:19:14
  */
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
@@ -73,6 +73,18 @@ const pandInput = () => (
 
 
 storiesOf('Input component', module)
+  .addParameters({
+    info: {
+      inline: true,
+      header: false,
+      text: `
+      ~~~jsx
+      <Input placeholder="placeholder" disabled onChange={action('changed')} />
+      <Input placeholder="placeholder" />
+      ~~~
+      `
+    }
+  })
   .add('Input', defaultInput)
   .add('被禁用的 Input', disabledInput)
   .add('带图标的 Input', iconInput)
