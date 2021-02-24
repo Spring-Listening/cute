@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-17 17:54:04
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-18 00:44:02
+ * @LastEditTime: 2021-02-24 23:29:25
  */
 import React  from 'react'
 import { storiesOf } from '@storybook/react'
@@ -45,7 +45,15 @@ const SimpleUpload = () => {
     </Upload>
   )
 }
-
+const wrapperStyle: React.CSSProperties = {
+  padding: '20px 40px'
+}
+const storyWrapper = (stroyFn: any) => (
+  <div style={wrapperStyle}>
+    <h3>组件演示</h3>
+    {stroyFn()}
+  </div>
+)
 storiesOf('Upload component', module)
   .addParameters({
     info: {
@@ -53,4 +61,5 @@ storiesOf('Upload component', module)
       inline: true
     }
   })
+  .addDecorator(storyWrapper)
   .add('Upload', SimpleUpload)
