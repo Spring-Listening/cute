@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-15 14:12:05
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-15 15:30:19
+ * @LastEditTime: 2021-02-24 22:43:27
  */
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
@@ -40,7 +40,7 @@ describe('test Button component', () => {
     expect(element).toHaveClass('btn-primary btn-lg klass')
   })
   it('should render a link when btnType equals link and href is provided', () => {
-    const wrapper = render(<Button btnType={ButtonType.Link} href="http://dummyurl">Link</Button>)
+    const wrapper = render(<Button btnType="link" href="http://dummyurl">Link</Button>)
     const element = wrapper.getByText('Link')
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('A')
