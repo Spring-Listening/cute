@@ -43,7 +43,7 @@
     "eject": "react-scripts eject",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
-    "publishOnly": "npm run test:nowatch && npm run lint && npm run build",
+    "prepublishOnly": "npm run test:nowatch && npm run lint && npm run build",
     "storybook": "start-storybook -p 6006 -s public",
     "storybook-docs": "start-storybook --docs",
     "build-storybook-docs": "build-storybook --docs",
