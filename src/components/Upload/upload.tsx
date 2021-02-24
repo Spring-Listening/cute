@@ -4,10 +4,9 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-17 17:01:34
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-17 21:36:04
+ * @LastEditTime: 2021-02-24 22:28:10
  */
 import React, { ChangeEvent, FC, useRef, useState } from 'react';
-import classNames from 'classnames'
 import axios from 'axios';
 import Button from '../Button/button';
 import UploadList from './uploadList'

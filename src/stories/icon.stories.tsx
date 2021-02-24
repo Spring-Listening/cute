@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-17 15:02:02
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-17 16:54:59
+ * @LastEditTime: 2021-02-24 22:12:26
  */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
@@ -30,6 +30,6 @@ storiesOf('Icon Component', module)
   })
   .addDecorator(storyWrapper)
   .add('Icon', () => (
-    <Icon icon="angle-down" className="arrow-icon"></Icon>
+    <Icon icon="search" className="search"></Icon>
   ))
 

@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-15 15:35:58
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-16 13:42:31
+ * @LastEditTime: 2021-02-24 22:25:05
  */
 import React, { createContext, useState, FunctionComponentElement } from 'react';
 import classNames from 'classnames'
@@ -57,7 +57,6 @@ const Menu: React.FC<MenuProps> = (props) => {
       console.log('children', children, index);
       
       const childElement = child as FunctionComponentElement<MenuItemProps>
-      console.log(childElement);
       
       const { displayName } = childElement.type
       if (displayName === 'MenuItem' || displayName === 'SubMenu') {
