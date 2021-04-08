@@ -4,11 +4,10 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-15 14:12:05
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-24 22:43:27
+ * @LastEditTime: 2021-04-08 17:54:43
  */
-import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
-import Button, {ButtonType, ButtonProps} from './button'
+import Button, { ButtonProps} from './button'
 
 const defaultProps = {
   onClick: jest.fn()
