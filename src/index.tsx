@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-02-18 00:31:14
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-18 23:23:44
+ * @LastEditTime: 2021-05-29 16:07:33
  */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
